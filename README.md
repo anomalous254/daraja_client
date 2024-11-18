@@ -50,7 +50,7 @@ from decouple import config
 auth_url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
 stk_push_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest'
 call_back_url = 'https://your-callback-url.com' # 
-phone_number = '+254712345678'
+phone_number = '+254769507699' # person to receive the prompt
 
 # Initialize the client
 cl = DarajaClient(

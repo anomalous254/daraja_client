@@ -93,15 +93,9 @@ print(response)
 
 This library was developed by [Peter Nyando](https://nyando-tech.vercel.app/), a passionate software engineer dedicated to creating scalable and efficient solutions. Check out more of my work on my [portfolio](https://nyando-tech.vercel.app/).
 
-## Configuration
 
 Ensure your `.env` file is properly configured.
-```
-DARAJA_API_CONSUMER_KEY=
-DARAJA_API_CONSUMER_SECRET=
-DARAJA_API_PASS_KEY=
-DARAJA_API_SHORT_CODE=174379 # use for sandbox
-```
+
 
 
 ## Contributing

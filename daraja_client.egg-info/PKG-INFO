@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: daraja_client
-Version: 0.1.0
+Version: 0.1.1
 Summary: This python module provides a simple way to integrate the Safaricom MPESA Daraja 2.0 API into your Python projects. It is designed to handle common operations like generating access tokens, formatting phone numbers, and sending STK Push requests.
 Home-page: https://github.com/anomalous254/daraja_client
 Author: Peter Nyando
@@ -30,7 +30,15 @@ This python module provides a simple way to integrate the Safaricom MPESA Daraja
 - Send STK Push requests for payments.
 - Easily configurable with environment variables.
 
-## Installation
+## 🛠️ Installation
+
+### From PyPI
+Install the library directly from PyPI:
+```bash
+pip install daraja-client
+```
+
+### From Source
 
 1. Clone the repository:
    ```bash
@@ -63,7 +71,7 @@ DARAJA_API_SHORT_CODE='your_shortcode'
 ### Import the Library
 
 ```python
-from core import DarajaClient
+from daraja_client.core import DarajaClient
 from decouple import config
 
 # Configuration

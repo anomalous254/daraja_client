@@ -1,0 +1,6 @@
+# Include all Python source files
+include daraja_client/*.py
+
+# Optionally, include other resources like README and LICENSE
+include README.md
+include LICENSE

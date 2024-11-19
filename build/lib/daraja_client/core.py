@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime
-from utils import format_phone_number, generate_access_token, generate_stk_password
+from .utils import format_phone_number, generate_access_token, generate_stk_password
 
 class DarajaClient:
     def __init__(self, auth_url: str, consumer_key: str, consumer_secret: str, pass_key: str, shortcode: str, phone_number: str, call_back_url: str):

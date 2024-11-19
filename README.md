@@ -105,7 +105,6 @@ This library was developed by [Peter Nyando](https://nyando-tech.vercel.app/), a
 Ensure your `.env` file is properly configured.
 
 
-
 ## Contributing
 
 1. Fork the repository.

@@ -3,7 +3,7 @@ from datetime import datetime
 from .utils import format_phone_number, generate_access_token, generate_stk_password
 
 class DarajaClient:
-    def __init__(self, auth_url: str, consumer_key: str, consumer_secret: str, pass_key: str, shortcode: str, phone_number: str, call_back_url: str):
+    def __init__(self, auth_url: str, consumer_key: str, consumer_secret: str, pass_key: str, shortcode: str, phone_number: str, call_back_url: str, amount:str):
         """
         Initialize the MPESA Daraja 2.0 API client with required credentials and phone number.
 
@@ -27,6 +27,7 @@ class DarajaClient:
         if not shortcode: raise ValueError("shortcode cannot be empty!")
         if not phone_number: raise ValueError("phone_number cannot be empty!")
         if not call_back_url: raise ValueError("call_back_url cannot be empty!")
+        if not amount: raise ValueError("amount cannot be empty!")
 
 
         # Initialize instance attributes
@@ -37,6 +38,7 @@ class DarajaClient:
         self.shortcode = shortcode
         self.phone_number = format_phone_number(phone_number)
         self.call_back_url = call_back_url
+        self.amount = amount
 
     @property
     def consumer_key(self):
@@ -73,7 +75,7 @@ class DarajaClient:
             "Password": stk_password,
             "Timestamp": timestamp,
             "TransactionType": "CustomerPayBillOnline", # "CustomerBuyGoodsOnline"
-            "Amount": "1",
+            "Amount": self.amount,
             "PartyA": self.phone_number,
             "PartyB": self.shortcode,
             "PhoneNumber": self.phone_number,

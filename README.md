@@ -59,6 +59,7 @@ auth_url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_
 stk_push_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest'
 call_back_url = 'https://your-callback-url.com' # 
 phone_number = '+254769507699' # person to receive the prompt
+amount = '1'
 
 # Initialize the client
 cl = DarajaClient(
@@ -68,7 +69,8 @@ cl = DarajaClient(
     pass_key=config('DARAJA_API_PASS_KEY'),
     shortcode=config('DARAJA_API_SHORT_CODE'),
     phone_number=phone_number,
-    call_back_url=call_back_url
+    call_back_url=call_back_url,
+    amount=amount
 )
 
 # Send STK Push

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="daraja_client",  # Replace with your package name
-    version="0.1.2",    # Initial version
+    version="0.1.3",    # Initial version
     author="Peter Nyando",
     author_email="peternyando2@gmail.com",
     description=(
